@@ -1,0 +1,44 @@
+.dialogsItems {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "dialogs"
+    "messages";
+}
+.dialogs {
+  grid-area: dialogs;
+  display: flex;
+  flex-flow: row wrap;
+}
+.messages {
+  grid-area: messages;
+}
+.messageSend {
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.dialogs .dialog {
+  margin-left: 3%;
+}
+.dialogsItems .messages .message {
+  margin-left: 3%;
+}
+
+@media (min-width: 576px) {
+  .dialogsItems {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "dialogs messages messages messages ";
+  }
+  .dialogs {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .dialogs .dialog {
+    padding: 3%;
+  }
+  .dialogsItems .messages .message {
+    padding: 2%;
+  }
+}

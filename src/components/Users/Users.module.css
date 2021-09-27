@@ -1,0 +1,48 @@
+.user {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-areas: "photo_button info";
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.photo {
+  width: 50%;
+  margin: 0;
+  border-radius: 50%;
+}
+.photo_button {
+  grid-area: photo_button;
+  margin-left: 2%;
+  margin-top: 15%;
+}
+.info {
+  grid-area: info;
+  display: flex;
+  border: 2px black solid;
+  border-radius: 15px;
+}
+.infoLeft {
+  width: 30%;
+  text-align: left;
+  padding: 10%;
+}
+.infoRight {
+  width: 30%;
+  text-align: right;
+  padding: 10%;
+}
+.selectedPage {
+  font-weight: bold;
+}
+.pagesNav {
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media (min-width: 576px) {
+  .user {
+    width: 80%;
+  }
+}

@@ -1,0 +1,12 @@
+.post {
+  margin-top: 2%;
+}
+.post .ava {
+  width: 8%;
+  margin: 0;
+  border-radius: 50%;
+}
+.post span {
+  font-size: large;
+  margin-left: 2%;
+}

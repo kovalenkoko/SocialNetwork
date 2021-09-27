@@ -1,0 +1,20 @@
+.content img {
+  width: 100%;
+}
+.content .ava_description {
+  margin-left: 5%;
+  margin-top: 2%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.content .ava_description img {
+  width: 20%;
+}
+.info {
+  font-weight: 500;
+  margin-left: 2%;
+}
+.content .ava_description img {
+  width: 30%;
+  height: 30%;
+}

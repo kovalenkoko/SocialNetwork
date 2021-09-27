@@ -1,0 +1,29 @@
+.nav {
+  grid-area: nav;
+  background-color: rgb(225, 183, 94);
+  display: flex;
+  flex-flow: row wrap;
+}
+.nav a {
+  text-decoration: none;
+  margin-left: 3%;
+  color: white;
+}
+.nav a.active {
+  color: rgb(46, 32, 13);
+}
+@media (min-width: 576px) {
+  .nav {
+    grid-area: nav;
+    background-color: rgb(225, 183, 94);
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .nav a {
+    text-decoration: none;
+    padding: 2%;
+  }
+  .nav a.active {
+    color: rgb(46, 32, 13);
+  }
+}
