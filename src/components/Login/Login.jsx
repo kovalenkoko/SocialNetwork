@@ -6,6 +6,7 @@ import { login } from "../../redux/auth-reducer";
 import { maxLengthCreator, required } from "../../utils/validators/validators";
 import { Input } from "../common/FormsControls/FormsControls";
 import classes from "./../common/FormsControls/FormsControls.module.css";
+import styles from "./login.module.css";
 
 const LoginForm = (props) => {
   return (
@@ -50,8 +51,17 @@ const Login = (props) => {
   }
   return (
     <div>
-      <h2>Login</h2>
-      <LoginReduxForm onSubmit={onSubmit} />
+      <div className={styles.infoForTesting}>
+        To test SocialNetwork, you can sign in to a test account: <br />
+        Email: free@samuraijs.com <br />
+        Password: free
+      </div>
+      <div className={styles.title}>
+        <h2>Login</h2>
+      </div>
+      <div className={styles.loginForm}>
+        <LoginReduxForm onSubmit={onSubmit} />
+      </div>
     </div>
   );
 };
